@@ -31,3 +31,18 @@ bug/stash
 4.stash drop		:git stash drop
 5.stash pop			:git stash pop (==3+4)
 
+remote repository
+1.push branch		:git push <remote> <branch>
+2.pull				:git pull
+3.connect			:git branch --set-upstream-to=origin/<branch> dev
+					:git branch --set-upstream-to <branch> origin/<branch>
+4.remote infomation	:git remote -v
+
+tag
+1.create tag		:git tag <tag> (commit_id)
+2.create tag+message:git -a <tag> -m 'message'
+3.show tag 			:git tag
+					:git show <tag>
+4.delete tag 		:git tag -d <tag>
+5.push tag			:git push <remote> <tag>/--tags
+6.remote delete tag	:git push <remote>:refs/tags/<tag>
