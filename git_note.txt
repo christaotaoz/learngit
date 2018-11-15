@@ -22,4 +22,12 @@ branch use
 6.force delete		:git branch -D <branch>
 7.merge branch		:git merge <branch>
 					:git merge --no-ff -m 'message' <branch>
+8.show merge		:git log --graph --pretty=oneline --abbrev-commit
+
+bug/stash
+1.stash uncommit	:git stash
+2.stash list		:git stash list
+3.stash apply		:git stash apply <stash>
+4.stash drop		:git stash drop
+5.stash pop			:git stash pop (==3+4)
 
