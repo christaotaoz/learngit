@@ -1,0 +1,15 @@
+1.install git		:sudo apt-get install git
+2.create repository	:mkdir learngit
+3.initial			:git init
+4.add file to created repository:
+					 git add <file>
+					 git commit -m 'commit message'
+5.current status	:git status
+5.show difference	:git diff <file>
+6.version reset		:git reset --hard HEAD^/HEAD~100/commit_id
+7.commit history 	:git log --pretty=oneline
+8.shell history 	:git reflog
+9.withdraw modify	:
+					 git checkout -- <file>
+					 git reset HEAD <file> + git checkout -- <file>
+10.delete file 		:git rm <file>
