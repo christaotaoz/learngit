@@ -9,3 +9,4 @@ Creating a branch is quick & simple
 Creating a branch is quick and simple
 >>>>>>> feacher1
 Creating a branch is quick AND simple
+merge
