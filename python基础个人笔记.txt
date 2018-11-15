@@ -1,0 +1,41 @@
+1.装饰器是什么，有什么作用？
+答：	定义:本质就是函数
+	功能:为其它函数添加附加功能
+	原则:不修改被修饰函数的源代码不修改被修饰函数的调用方式
+	原理:装饰器 = 高阶函数+函数嵌套+闭包 
+	# 无参装饰器，这是一个实现装饰器最基本的框架
+	def timmer(func):
+	    def bar():
+		func()
+	    return bar  
+	# 带参数装饰器
+	def timmer(func):
+	    def bar(*args,**kwargs):
+		func(*args,**kwargs)
+	    return bar
+	# 加入函数返回值
+	import time
+	def timmer(func):
+	     def bar(*args,**kwargs):
+		 start_time=time.time()
+		 res=func(*args,**kwargs)
+		 stop_time=time.time()
+		 print("狼来的时间为%s" %(stop_time-start_time))
+		 return res
+	     return bar
+2.迭代器，生成器的区别？
+迭代器 
+	可迭代协议 —— 含有iter方法的都是可迭代的 
+	迭代器协议 —— 含有next和iter的都是迭代器 
+	特点 节省内存空间 方便逐个取值，一个迭代器只能取一次。 
+生成器 —— 迭代器 
+	生成器函数 含有yield关键字的函数都是生成器函数 
+	生成器函数的特点 调用之后函数内的代码不执行，返回生成器 
+		每从生成器中取一个值就会执行一段代码，遇见yield就停止。 
+		如何从生成器中取值： 
+		for ：如果没有break会一直取直到取完 
+		next ：每次只取一个 
+		send ：不能用在第一个，取下一个值的时候给上个位置传一个新的值
+		数据类型强制转换 ：会一次性把所有数据都读到内存里 
+	生成器表达式 (条件成立想放在生成器中的值 for i in 可迭代的 if 条件)
+
