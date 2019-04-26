@@ -1,16 +1,16 @@
 index use
 1.install git		:sudo apt-get install git
 2.create repository	:mkdir learngit
-3.initial			:git init
+3.initial		:git init
 4.commit file		:git add <file>
-					:git commit -m 'commit message'
+			:git commit -m 'commit message'
 5.current status	:git status
 5.show difference	:git diff <file>
 6.version reset		:git reset --hard HEAD^/HEAD~100/commit_id
 7.commit history 	:git log --pretty=oneline
 8.shell history 	:git reflog
 9.withdraw modify	:git checkout -- <file>
-					:git reset HEAD <file> + git checkout -- <file>
+			:git reset HEAD <file> + git checkout -- <file>
 10.delete file 		:git rm <file>
 
 branch use
@@ -21,7 +21,7 @@ branch use
 5.delete branch 	:git branch -d <branch>
 6.force delete		:git branch -D <branch>
 7.merge branch		:git merge <branch>
-					:git merge --no-ff -m 'message' <branch>
+			:git merge --no-ff -m 'message' <branch>
 8.show merge		:git log --graph --pretty=oneline --abbrev-commit
 
 bug/stash
@@ -29,20 +29,20 @@ bug/stash
 2.stash list		:git stash list
 3.stash apply		:git stash apply <stash>
 4.stash drop		:git stash drop
-5.stash pop			:git stash pop (==3+4)
+5.stash pop		:git stash pop (==3+4)
 
 remote repository
 1.push branch		:git push <remote> <branch>
-2.pull				:git pull
-3.connect			:git branch --set-upstream-to=origin/<branch> dev
-					:git branch --set-upstream-to <branch> origin/<branch>
+2.pull			:git pull
+3.connect		:git branch --set-upstream-to=origin/<branch> dev
+			:git branch --set-upstream-to <branch> origin/<branch>
 4.remote infomation	:git remote -v
 
 tag
 1.create tag		:git tag <tag> (commit_id)
-2.create tag+message:git -a <tag> -m 'message'
-3.show tag 			:git tag
-					:git show <tag>
+2.create tag+message	:git -a <tag> -m 'message'
+3.show tag 		:git tag
+			:git show <tag>
 4.delete tag 		:git tag -d <tag>
-5.push tag			:git push <remote> <tag>/--tags
+5.push tag		:git push <remote> <tag>/--tags
 6.remote delete tag	:git push <remote>:refs/tags/<tag>
