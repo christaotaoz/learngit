@@ -54,7 +54,7 @@
 #	git stash clear					删除所有的工作区
 #	git stash					保存现有工作区内容，回到上一个commit状态
 #	git stash list					查看现在保存的工作区 0是最近保存的工作区
-#	git stash pop					让工作区退回到上一个保存的状态，并删除上一个保存工作区
+#	git stash pop					工作区退回到上一个保存的状态并删除上一个保存工作区
 
 ```
 
