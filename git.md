@@ -22,28 +22,28 @@
 #####  常用：
 
 ```
-#	  git config --system  user.email ‘XX@XX’			  配置邮箱
-#	  git config --global  user.name  Levi			    配置用户名称
-#	  git config core.editor vim						        配置编辑作者
-#	  git config --global credential.helper store		记住账号密码
-#	  git config --system --unset credential.helper	账号输入错误，重置输入
-#   git remote add origin XX.git		连接远程仓库
-#   git push -u origin master				推送代码
-#   git clone XX.git								从远程获取代码
-#   git init										    创建本地仓库
-#   git status										  查看分支状态
-#   git add file									  提交指定文件到暂存区
-#   git add --all 									提交所有改动到暂存区
-#   git commit file -m ‘XX’ 				同步到仓库
-#   git log											    查看日志
-#   git checkout  --  readme.txt		撤回改动
-#   git mv  git_test  test/					移动文件
-#   git rm  git_test 								删除文件
-#   git reset  --hard  HEAD^				退回到上个commit位置
-#   git reset  --hard  commit_id 		退回到指定的commit位置
-#   git reflog  									  获取所有 commit_id
-#   git reset  --head  commit_id	  去往指定的版本
-#   git remote add [<options>] <name> <url> 连接远程库，name是为远程库命名
+#git config --system  user.email ‘XX@XX’			配置邮箱
+#git config --global  user.name  Levi			    配置用户名称
+#git config core.editor vim						        配置编辑作者
+#git config --global credential.helper store	记住账号密码
+#git config --system --unset credential.helper账号输入错误，重置输入
+#git remote add origin XX.git		连接远程仓库
+#git push -u origin master			推送代码
+#git clone XX.git								从远程获取代码
+#git init										    创建本地仓库
+#git status										  查看分支状态
+#git add file									  提交指定文件到暂存区
+#git add --all 									提交所有改动到暂存区
+#git commit file -m ‘XX’ 				同步到仓库
+#git log											  查看日志
+#git checkout  --  readme.txt		撤回改动
+#git mv  git_test  test/				移动文件
+#git rm  git_test 							删除文件
+#git reset  --hard  HEAD^				退回到上个commit位置
+#git reset  --hard  commit_id 	退回到指定的commit位置
+#git reflog  									  获取所有 commit_id
+#git reset  --head  commit_id	  去往指定的版本
+#git remote add [<options>] <name> <url> 连接远程库，name是为远程库命名
 
 ```
 
