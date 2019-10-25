@@ -62,7 +62,7 @@
 
 ```
 #	git branch			查看分支 （*为当前正在工作的分支）
-# git branch  -a      查看所有分支
+#    git branch  -a               查看所有分支
 #	git branch dev			创建一个dev分支
 #	git checkout dev		切换到dev分支工作
 #	git checkout -b dev		创建dev分支并切换到dev
